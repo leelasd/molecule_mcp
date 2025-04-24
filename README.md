@@ -5,7 +5,7 @@
 ![Molecule Visualizer](https://img.shields.io/badge/MCP-Molecule%20Visualizer-blue)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![RDKit](https://img.shields.io/badge/RDKit-2023.3.1%2B-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 </div>
 
