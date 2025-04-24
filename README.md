@@ -44,16 +44,19 @@ This enables chemistry-related use cases such as exploring molecular structures,
 ### Using the MCP Server with Claude
 
 ![MCP in Claude](images/MCP-in-Claude.png)
+
 *Claude using the Molecule Visualizer MCP server to display molecular structures.*
 
 ### Visualizing Molecules using SMILES
 
 ![Visualizing with SMILES](images/Give-it-Smiles.png)
+
 *Providing direct SMILES codes to generate molecular visualizations.*
 
 ### Comparison with Web Access
 
 ![Claude with Web Access](images/Claude-with-Webaccess-failing.png)
+
 *Attempting similar visualization with web access - MCP provides more reliable chemistry capabilities.*
 
 ## Features
