@@ -62,23 +62,6 @@ This enables chemistry-related use cases such as exploring molecular structures,
   - Rotatable bonds
   - LogP (lipophilicity)
 
-### Common Molecules Database
-
-Built-in database of common molecules accessible by name:
-- aspirin
-- caffeine
-- paracetamol
-- ibuprofen
-- glucose
-- benzene
-- ethanol
-- water
-- methane
-- atp
-- dopamine
-- serotonin
-- cholesterol
-- penicillin
 
 ## Installation
 
@@ -164,16 +147,20 @@ The server will start and listen for MCP connections.
 ```json
 {
   "mcpServers": {
-    "molecule-visualizer": {
-      "command": "python",
+    "Molecule Visualizer": {
+      "command": "uv",
       "args": [
-        "/absolute/path/to/molecule-visualizer/molecule_server.py"
-      ],
-      "env": {
-        "PYTHONPATH": "/path/to/your/python/environment"
-      },
-      "disabled": false,
-      "autoApprove": []
+        "run",
+        "--with",
+        "mcp[cli]",
+        "--with",
+        "pillow",
+        "--with",
+        "rdkit",
+        "mcp",
+        "run",
+        "/ABSOLUTE-PATH-TO-MOLECULE-SERVER/molecule_server.py"
+      ]
     }
   }
 }
@@ -262,26 +249,6 @@ List all common molecules available in the database.
 **Returns:**
 - JSON formatted list of molecule names and their SMILES strings
 
-### Common Molecules
-
-The server includes a built-in database of common molecules:
-
-| Name | SMILES |
-|------|--------|
-| aspirin | `CC(=O)OC1=CC=CC=C1C(=O)O` |
-| caffeine | `CN1C=NC2=C1C(=O)N(C(=O)N2C)C` |
-| paracetamol | `CC(=O)NC1=CC=C(C=C1)O` |
-| ibuprofen | `CC(C)CC1=CC=C(C=C1)C(C)C(=O)O` |
-| glucose | `C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O` |
-| benzene | `C1=CC=CC=C1` |
-| ethanol | `CCO` |
-| water | `O` |
-| methane | `C` |
-| atp | `NC1=NC=NC2=C1N=CN2[C@@H]3[C@H]([C@H]([C@@H](O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O` |
-| dopamine | `C1=CC(=C(C=C1CCN)O)O` |
-| serotonin | `C1=CC2=C(C=C1O)C(=CN2)CCN` |
-| cholesterol | `CC(C)CCCC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C` |
-| penicillin | `CC1(C(N2C(S1)C(C2=O)NC(=O)CC3=CC=CC=C3)C(=O)O)C` |
 
 ## Examples
 
