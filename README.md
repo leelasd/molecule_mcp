@@ -57,7 +57,7 @@ This enables chemistry-related use cases such as exploring molecular structures,
 
 ![Claude with Web Access](images/Claude-with-Webaccess-failing.png)
 
-*Attempting similar visualization with web access - MCP provides more reliable chemistry capabilities.*
+*Attempting similar visualization with web access did not work as Claude fails at getting the right smiles code from the internet.  - MCP provides more reliable chemistry capabilities if pubchempy and chembl client are added to this.*
 
 ## Features
 
