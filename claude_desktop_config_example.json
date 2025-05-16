@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "molecule-visualizer": {
+      "command": "python",
+      "args": [
+        "/absolute/path/to/molecule-visualizer/molecule_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "/path/to/your/python/environment"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
